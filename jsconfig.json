@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@heroImages/*": [
+        "assets/images/heroSlider"
+      ]
+    },
+  },
+  "exclude": [
+    "node_modules",
+    "out",
+    ".vscode",
+    ".next",
+  ]
+}
