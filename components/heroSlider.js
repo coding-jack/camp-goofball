@@ -32,6 +32,7 @@ function HeroSlider() {
   ];
   const settings = {
     dots: false,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
     infinite: true,
