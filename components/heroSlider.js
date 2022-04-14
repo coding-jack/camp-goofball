@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image'
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
+// import useEmblaCarousel from 'embla-carousel-react'
+// import Autoplay from 'embla-carousel-autoplay'
+import Slider from 'react-slick'
 
 
 function HeroSlider() {
@@ -30,24 +31,52 @@ function HeroSlider() {
       label: 'Massif',
       path: '/images/heroSlider/6-Massif.jpg',
     },
-  ];
-  const carouselOptions = {
-    loop: true,
-    speed: 5,
-    draggable: false
+    ];
+  const settings = {
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+    draggable: false,
+    swipe: false,
+    slidesToShow: 1,
+    fade: true,
+    cssEase: 'linear',
+    slidesToScroll: 1
   }
-  const [emblaRef, emblaApi] = useEmblaCarousel(carouselOptions, [Autoplay({delay: 7000})])
-  useEffect(() => {
-  if (emblaApi) {
-    // Embla API is ready
-  }
-  }, [emblaApi])
+  // const carouselOptions = {
+  //   loop: true,
+  //   speed: 5,
+  //   draggable: false
+  // }
+  // const [emblaRef, emblaApi] = useEmblaCarousel(carouselOptions, [Autoplay({delay: 7000})])
+  // useEffect(() => {
+  // if (emblaApi) {
+  //   // Embla API is ready
+  // }
+  // }, [emblaApi])
 
   return (
-    <div className="embla absolute w-full h-full z-10" ref={emblaRef}>
-      <div className="embla__container w-full h-full">
+    // <div className="embla absolute w-full h-full z-10" ref={emblaRef}>
+    //   <div className="embla__container w-full h-full">
+        // {photos.map((photo) => (
+        //   <div className="embla__slide h-full w-full" key={photo.label}>
+        //     <Image
+        //       className="slider-image"
+        //       src={photo.path}
+        //       alt={photo.label}
+        //       layout="fill"
+        //       objectFit="cover"
+        //       objectPosition="center"
+        //     />
+        //   </div>
+        // ))}
+    //   </div>
+    // </div>
+    <div className="slider absolute w-full h-full z-10">
+      <Slider {...settings}>
         {photos.map((photo) => (
-          <div className="embla__slide h-full w-full" key={photo.label}>
+          <div className="h-full w-full" key={photo.label}>
             <Image
               className="slider-image"
               src={photo.path}
@@ -58,7 +87,7 @@ function HeroSlider() {
             />
           </div>
         ))}
-      </div>
+      </Slider>
     </div>
   )
 }

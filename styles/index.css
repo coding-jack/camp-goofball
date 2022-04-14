@@ -10,3 +10,9 @@ html,
 body {
   @apply bg-gradient-to-br from-blue-500 to-teal-600;
 }
+
+.slick-slider,
+.slick-list,
+.slick-track {
+  height: 100%;
+}
