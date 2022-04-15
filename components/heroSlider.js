@@ -7,27 +7,27 @@ function HeroSlider() {
   const photos = [
     {
       label: 'Midnight',
-      path: '/images/heroSlider/1-Midnight.jpg',
+      path: '/images/HeroSlider/1-Midnight.jpg',
     },
     {
       label: 'Crowd',
-      path: '/images/heroSlider/2-Crowd.jpg',
+      path: '/images/HeroSlider/2-Crowd.jpg',
     },
     {
       label: 'Steve',
-      path: '/images/heroSlider/3-Steve.jpg',
+      path: '/images/HeroSlider/3-Steve.jpg',
     },
     {
       label: 'Amac',
-      path: '/images/heroSlider/4-Amac.jpg',
+      path: '/images/HeroSlider/4-Amac.jpg',
     },
     {
       label: 'Group Stage',
-      path: '/images/heroSlider/5-GroupStage.jpg',
+      path: '/images/HeroSlider/5-GroupStage.jpg',
     },
     {
       label: 'Massif',
-      path: '/images/heroSlider/6-Massif.jpg',
+      path: '/images/HeroSlider/6-Massif.jpg',
     },
   ];
   const settings = {
