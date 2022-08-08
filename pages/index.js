@@ -4,6 +4,11 @@ import styles from '../styles/Home.module.css'
 import React from 'react'
 import HeroContent from '../components/HeroContent'
 import HeroSlider from '../components/HeroImageSlider'
+import About from '../components/About'
+import Lineup from '../components/Lineup'
+import Location from '../components/Location'
+import GeneralInfo from '../components/GeneralInfo'
+import RulesRegulations from '../components/RulesRegulations'
 import MailingListSignup from '../components/NewsletterForm'
 
 export default function Home() {
@@ -19,17 +24,19 @@ export default function Home() {
       <HeroSlider/>
       <div className={styles.container}>
         <HeroContent />
+        <About />
+        <Lineup />
+        {/* <Location /> */}
+        <GeneralInfo />
+        <RulesRegulations />
         {/* <MailingListSignup /> */}
         <footer className={styles.footer}>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://jacksonkaufman.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered by{' '}
-            <span className={styles.logo}>
-              <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-            </span>
+            Developed by Jackson Kaufman
           </a>
         </footer>
       </div>

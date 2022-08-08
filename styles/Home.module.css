@@ -1,6 +1,7 @@
 .container {
   padding: 0 2rem;
   z-index: 20;
+  @apply max-w-screen-xl mx-auto;
 }
 
 .main {
@@ -26,6 +27,7 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  @apply hover:text-primary transition ease-in-out duration-200 text-3xl;
 }
 
 .title a {
