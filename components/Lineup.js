@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Lineup = () => {
   return (
@@ -6,7 +7,7 @@ const Lineup = () => {
       <h2 className="text-5xl p-2 md:p-6">Lineup</h2>
       <div className="grid grid-cols-4">
         <div className="col-span-4">
-          <img className="z-10 mx-auto max-h-screen" src="/images/CGB-Poster.png" alt="" />
+          <Image className="z-10 mx-auto max-h-screen" layout="responsive" objectFit="contain" height="100vh" width="100%" sizes="50vw" src="/images/CGB-Poster.png" alt="" />
         </div>
       </div>
     </div>

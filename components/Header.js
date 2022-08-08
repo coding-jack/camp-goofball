@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 
 function Header() {
@@ -20,7 +21,7 @@ function Header() {
                 <div className="flex-shrink-0">
                   <Link href="/">
                     <a>
-                      <img className="h-8 w-8" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow" />
+                      <Image layout="responsive" height="20px"width="20px" className="h-8 w-8" src="/images/HeroSlider/2-Crowd.jpg" alt="Workflow" />
                     </a>
                   </Link>
                 </div>
@@ -64,7 +65,7 @@ function Header() {
                   {/* <!-- Mobile menu button --> */}
                   <button
                     className="inline-flex items-center justify-center p-2 rounded-md text-primary hover:opacity-75 hover:bg-purple hover:bg-opacity-25 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                    aria-checked={isOn}
+                    ariaChecked={isOn}
                     tabIndex="0"
                     onClick={() => setIsOn(!isOn)}
                   // className={`${isOn ? 'bg-indigo-600' : 'bg-gray-200'} relative inline-block flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:shadow-outline`}
@@ -84,7 +85,7 @@ function Header() {
                       stroke="currentColor"
                       aria-hidden="true"
                     >
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                     {/* <!--
               Heroicon name: x
@@ -99,7 +100,7 @@ function Header() {
                       stroke="currentColor"
                       aria-hidden="true"
                     >
-                      <path strokeLinecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                   </button>
                 </div>
